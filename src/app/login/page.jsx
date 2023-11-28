@@ -3,11 +3,9 @@ import Image from "next/image";
 import BtnLogin from './../components/buttonLogin/BtnLogin';
 
 
-export default function Login({ isLogged }) {
+export default function Login() {
 
-    if(isLogged){
-        
-    }
+  
     return (
         <div className="contenedorLogin">
             <Image src="/logo.png" width={300} height={300} alt={'Logo'} />
