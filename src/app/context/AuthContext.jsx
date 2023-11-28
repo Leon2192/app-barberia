@@ -1,4 +1,4 @@
-import { useContext, createContext, useState, useEffect } from 'react';
+import React, { useContext, createContext, useState, useEffect } from 'react';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import { initializeApp } from '@firebase/app';
 import { useRouter } from 'next/navigation';

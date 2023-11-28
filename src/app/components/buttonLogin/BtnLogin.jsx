@@ -1,10 +1,12 @@
 "use client"
+import { UserAuth } from "@/app/context/AuthContext";
 import { Button } from "@nextui-org/button";
 import { Toaster } from 'react-hot-toast';
-import { UserAuth } from '../../context/AuthContext'
+//import { UserAuth } from '../../context/AuthContext'
 
 export default function BtnLogin() {
-    const { handleLogin, userExist, handleLogout } = UserAuth()
+    //const { handleLogin, userExist, handleLogout } = UserAuth()
+    const { handleLogin, handleLogout, userExist } = UserAuth()
 
     return (
         <>
@@ -12,7 +14,7 @@ export default function BtnLogin() {
                 position="bottom-right"
                 reverseOrder={false}
             />
-            <Button className="btnLogin" variant="shadow" onClick={() => handleLogin()}>
+            <Button className="btnLogin" variant="shadow" onClick={handleLogin}>
                 Ingresar con gmail
             </Button>
         </>
