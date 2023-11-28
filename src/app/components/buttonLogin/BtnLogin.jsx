@@ -1,4 +1,4 @@
-"use client"
+//"use client"
 import { UserAuth } from "@/app/context/AuthContext";
 import { Button } from "@nextui-org/button";
 import { Toaster } from 'react-hot-toast';
