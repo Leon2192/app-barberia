@@ -4,7 +4,7 @@ import { initializeApp } from '@firebase/app';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
 
-const AuthContext = createContext()
+export const AuthContext = createContext()
 
 export const AuthContextProvider = ({ children }) => {
     const provider = new GoogleAuthProvider();
