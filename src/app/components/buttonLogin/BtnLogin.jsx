@@ -12,7 +12,7 @@ export default function BtnLogin() {
                 position="bottom-right"
                 reverseOrder={false}
             />
-            <Button className="btnLogin" variant="shadow" onClick={handleLogin}>
+            <Button className="btnLogin" variant="shadow" onClick={() => handleLogin()}>
                 Ingresar con gmail
             </Button>
         </>
