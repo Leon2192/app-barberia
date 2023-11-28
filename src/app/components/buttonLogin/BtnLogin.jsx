@@ -1,12 +1,10 @@
-//"use client"
+"use client"
 import { AuthContext, UserAuth } from "@/app/context/AuthContext";
 import { Button } from "@nextui-org/button";
 import { useContext } from "react";
 import { Toaster } from 'react-hot-toast';
-//import { UserAuth } from '../../context/AuthContext'
 
 export default function BtnLogin() {
-    //const { handleLogin, userExist, handleLogout } = UserAuth()
     const { handleLogin, handleLogout, userExist } = useContext(AuthContext)
 
     return (
