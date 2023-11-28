@@ -41,7 +41,7 @@ export const AuthContextProvider = ({ children }) => {
                 // The signed-in user info.
                 const user = result.user;
 
-                setUserExist(user) // ESTE ESTADO LO USO PARA SWITCHEAR EL BOTON DE INGRESAR MAIL CON EL DE CERRAR SESION
+                //setUserExist(user) // ESTE ESTADO LO USO PARA SWITCHEAR EL BOTON DE INGRESAR MAIL CON EL DE CERRAR SESION
                 setDataUser(user) // EN ESTE ESTADO MUESTRO DATA DEL USUARIO
                 toast.success(`Bienvenido/a! ${result.user.displayName}`)
 
@@ -68,7 +68,9 @@ export const AuthContextProvider = ({ children }) => {
             app,
             auth,
             userExist,
+            setUserExist,
             dataUser,
+            setDataUser,
             handleLogout,
             handleLogin
         }}>

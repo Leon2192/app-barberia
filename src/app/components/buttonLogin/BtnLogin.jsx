@@ -15,17 +15,6 @@ export default function BtnLogin() {
             <Button className="btnLogin" variant="shadow" onClick={handleLogin}>
                 Ingresar con gmail
             </Button>
-            {/* {
-                userExist === null
-                    ?
-                    <Button className="btnLogin" variant="shadow" onClick={handleLogin}>
-                        Ingresar con gmail
-                    </Button>
-                    :
-                    <Button onClick={handleLogout} color="danger">
-                        Cerrar sesión
-                    </Button>
-            } */}
         </>
     )
 }
