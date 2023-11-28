@@ -12,7 +12,10 @@ export default function BtnLogin() {
                 position="bottom-right"
                 reverseOrder={false}
             />
-            {
+            <Button className="btnLogin" variant="shadow" onClick={handleLogin}>
+                Ingresar con gmail
+            </Button>
+            {/* {
                 userExist === null
                     ?
                     <Button className="btnLogin" variant="shadow" onClick={handleLogin}>
@@ -22,7 +25,7 @@ export default function BtnLogin() {
                     <Button onClick={handleLogout} color="danger">
                         Cerrar sesión
                     </Button>
-            }
+            } */}
         </>
     )
 }
